@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 # Allow Lineage config to override others
--include device/google/muskie/BoardConfigLineage.mk
+-include device/google/walleye/BoardConfigLineage.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := walleye
 DEFAULT_LOW_PERSISTENCE_MODE_BRIGHTNESS := 0x00000056
@@ -25,7 +25,7 @@ include device/google/wahoo/BoardConfig.mk
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
 
 #sepolicy common to muskie/walleye
-BOARD_SEPOLICY_DIRS += device/google/muskie/sepolicy
+BOARD_SEPOLICY_DIRS += device/google/walleye/sepolicy
 
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh

@@ -26,9 +26,9 @@ PRODUCT_HARDWARE := walleye
 ifdef DEVICE_PACKAGE_OVERLAYS
 $(warning Overlays defined in '$(DEVICE_PACKAGE_OVERLAYS)' will override '$(PRODUCT_HARDWARE)' overlays)
 endif
-DEVICE_PACKAGE_OVERLAYS += device/google/muskie/walleye/overlay
+DEVICE_PACKAGE_OVERLAYS += device/google/walleye/walleye/overlay
 
-include device/google/muskie/device-common.mk
+include device/google/walleye/device-common.mk
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420
@@ -39,4 +39,4 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Thermal HAL
 PRODUCT_COPY_FILES += \
-    device/google/muskie/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+    device/google/walleye/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
