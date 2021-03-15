@@ -23,3 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/walleye/walleye:11/RP1A.201005.004.A1/6934943:user/release-keys
 
 $(call inherit-product-if-exists, vendor/google/walleye/walleye-vendor.mk)
+$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
+
+# GMS client ID
+PRODUCT_GMS_CLIENTID_BASE := android-google
