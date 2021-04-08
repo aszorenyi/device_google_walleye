@@ -15,7 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_walleye.mk
+    $(LOCAL_DIR)/havoc_walleye.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_walleye-userdebug
+    havoc_walleye-userdebug \
+    havoc_walleye-user \
+    havoc_walleye-eng

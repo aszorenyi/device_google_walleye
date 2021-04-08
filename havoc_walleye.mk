@@ -31,17 +31,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 
-# Inherit some common Evolution X stuff.
-EVO_BUILD_TYPE := UNOFFICIAL
-EVO_MAINTAINER := Saurabh Jarial
-EVO_DONATE_URL := unknown
+# Inherit some common Havoc-OS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 WITH_GAPPS := true
 TARGET_INCLUDE_WIFI_EXT := true
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit product specific makefiles
 $(call inherit-product, device/google/walleye/device-walleye.mk)
@@ -52,6 +49,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := google
-PRODUCT_NAME := evolution_walleye
+PRODUCT_NAME := havoc_walleye
 PRODUCT_DEVICE := walleye
 PRODUCT_MODEL := Pixel 2
