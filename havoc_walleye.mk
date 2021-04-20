@@ -41,7 +41,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 $(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
 # Inherit product specific makefiles
-$(call inherit-product, device/google/walleye/device-walleye.mk)
+$(call inherit-product, device/google/walleye/device.mk)
 $(call inherit-product, vendor/google/walleye/walleye-vendor.mk)
 
 PRODUCT_COPY_FILES += \
